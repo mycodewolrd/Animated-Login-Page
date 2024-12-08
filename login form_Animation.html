@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Poppins");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "popins", "sans-serif";
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #1f293a;
+        }
+
+        .contanier {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 256px;
+            height: 256px;
+        }
+
+        .contanier span {
+            position: absolute;
+            left: 0;
+            width: 32px;
+            height: 5px;
+            background: #2c4766;
+            border-radius: 8px;
+            transform-origin: 128px;
+            transform: scale(2.2) rotate(calc(var(--x) * 360deg / 50));
+            animation: animate-Blink 3s linear infinite;
+            animation-delay: calc(var(--x) * (3s / 50));
+        }
+
+        @keyframes animate-Blink {
+            0% {
+                background: #0ef;
+            }
+
+            25% {
+                background: #2c4766;
+            }
+        }
+
+        .login-box {
+            position: absolute;
+            width: 400px;
+        }
+
+        .login-box form {
+            width: 100%;
+            padding: 0 50px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #0ef;
+            text-align: center;
+        }
+
+        .input-box {
+            position: relative;
+            margin: 25px 0;
+        }
+
+        .input-box input {
+            width: 100%;
+            height: 50px;
+            background: transparent;
+            border: 2px solid #2c4766;
+            font-size: 1rem;
+            padding-left: 20px;
+            color: #fff;
+            outline: none;
+            border-radius: 40px;
+            transition: o.5s ease;
+        }
+
+        .input-box input:focus,
+        .input-box input:valid {
+            border-color: #0ef;
+        }
+
+        .input-box label {
+            position: absolute;
+            top: 45%;
+            left: 30px;
+            transform: translateY(-50%);
+            /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+            font-size: 1rem;
+            color: #fff;
+            pointer-events: none;
+            transition: 0.5s ease;
+        }
+
+        .input-box input:focus~label,
+        .input-box input:valid {
+            top: 1px;
+            font-size: 0.8em;
+            background: #1f293a;
+            padding: 0 6px;
+            color: #0ef;
+        }
+
+        .forgot-password {
+            margin: -15px 0 10px;
+            text-align: center;
+        }
+
+        .forgot-password a {
+            font-size: 0.85em;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        /**************************/
+
+        button {
+            width: 100%;
+            height: 45px;
+            background: #0ef;
+            border: none;
+            outline: none;
+            border-radius: 45px;
+            cursor: pointer;
+            font-size: 1rem;
+            color: #1f293a;
+            font-weight: 600;
+        }
+
+        .singup {
+            margin: 20px 0 10px;
+            text-align: center;
+        }
+
+        .singup a {
+            font-size: 1rem;
+            color: #0ef;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .singup a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contanier">
+        <div class="login-box">
+            <h2>Log in</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="email" required />
+                    <label>Email</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" required />
+                    <label>Password</label>
+                </div>
+
+                <div class="forgot-password">
+                    <a href="#">Forgot your password ?</a>
+                </div>
+
+                <button type="submit" class="btn">LogIn</button>
+
+                <div class="singup">
+                    <a href="#">SignUp</a>
+                </div>
+            </form>
+        </div>
+
+        <span style="--x: 0"></span>
+        <span style="--x: 1"></span>
+        <span style="--x: 2"></span>
+        <span style="--x: 3"> </span>
+        <span style="--x: 4"></span>
+        <span style="--x: 5"></span>
+        <span style="--x: 6"></span>
+        <span style="--x: 7"></span>
+        <span style="--x: 8"></span>
+        <span style="--x: 9"></span>
+        <span style="--x: 10"></span>
+        <span style="--x: 11"></span>
+        <span style="--x: 12"></span>
+        <span style="--x: 13"></span>
+        <span style="--x: 14"></span>
+        <span style="--x: 15"></span>
+        <span style="--x: 16"></span>
+        <span style="--x: 17"></span>
+        <span style="--x: 18"></span>
+        <span style="--x: 19"></span>
+        <span style="--x: 20"></span>
+        <span style="--x: 21"></span>
+        <span style="--x: 22"></span>
+        <span style="--x: 23"></span>
+        <span style="--x: 24"></span>
+        <span style="--x: 25"></span>
+        <span style="--x: 26"></span>
+        <span style="--x: 27"></span>
+        <span style="--x: 28"></span>
+        <span style="--x: 29"></span>
+        <span style="--x: 30"></span>
+        <span style="--x: 31"></span>
+        <span style="--x: 32"></span>
+        <span style="--x: 33"></span>
+        <span style="--x: 34"></span>
+        <span style="--x: 35"></span>
+        <span style="--x: 36"></span>
+        <span style="--x: 37"></span>
+        <span style="--x: 38"></span>
+        <span style="--x: 39"></span>
+        <span style="--x: 40"></span>
+        <span style="--x: 41"></span>
+        <span style="--x: 42"></span>
+        <span style="--x: 43"></span>
+        <span style="--x: 44"></span>
+        <span style="--x: 45"></span>
+        <span style="--x: 46"></span>
+        <span style="--x: 47"></span>
+        <span style="--x: 48"></span>
+        <span style="--x: 49"></span>
+    </div>
+</body>
+
+</html>
